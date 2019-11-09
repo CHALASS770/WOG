@@ -2,7 +2,7 @@ pipeline {
    agent any
 
    stages {
-      stage('connect')
+      stage('checkout')
       {
          steps{
          git "https://github.com/CHALASS770/WOG.git"
