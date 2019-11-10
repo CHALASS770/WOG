@@ -11,8 +11,8 @@ pipeline {
       
       stage('build-docker') {
          steps {
-            sh "systemctl start docker" /*don't work i don't know why*/
-             sh "docker-compose up" /*don't work its said docker can't start */ 
+            
+             sh "docker-compose up -d" /*don't work its said docker can't start */ 
          }
       }
       stage('build-e2e.py')
