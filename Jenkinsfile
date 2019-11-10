@@ -11,16 +11,9 @@ pipeline {
       
       stage('build') {
          steps {
-             app.inside { 
-            sh 'echo "Tests passés"'
-
-         
-        docker.withRegistry ('https://registry.hub.docker.com', 'docker-hub-credentials') { 
-           sh "docker-compose up" 
+             sh "docker-compose up" 
            
-           
-        } 
-    } 
+      
             
 
          }
