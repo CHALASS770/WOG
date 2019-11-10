@@ -8,13 +8,10 @@ pipeline {
          git "https://github.com/CHALASS770/WOG.git"
             }
       }
-      stage('start'){
-         steps{
-            sh "bash start.sh"
-         }
-      }
+      
       stage('build') {
          steps {
+            docker.withRegistry ('https://registry.hub.docker.com', 'docker-hub-credentials')
             sh "docker-compose up"
 
          }
