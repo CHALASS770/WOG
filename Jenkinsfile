@@ -11,6 +11,7 @@ pipeline {
       
       stage('build') {
          steps {
+            sh "systemctl start docker"
              sh "docker-compose up" 
            
       
