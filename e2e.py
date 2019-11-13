@@ -8,7 +8,7 @@ def test_score_webservice():
     print(1)
 
 
-    Url = "http://127.0.0.1:5000"
+    Url = "http://127.0.0.1:8777"
     driver = webdriver.Chrome(executable_path='C:\chromedriver')
     print(2)
 
