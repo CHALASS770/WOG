@@ -19,7 +19,7 @@ pipeline {
       {
          steps
          {
-            sh "python2.5 e2e.py" /*don't work it's said selenium don't exist*/
+            sh "python2.7 e2e.py" /*don't work it's said selenium don't exist*/
          }
       }
    }
