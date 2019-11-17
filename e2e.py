@@ -29,7 +29,7 @@ def main_test() :
     try:
         test = test_score_webservice()
         print(0)
-    except WebDriverException:
-        print(WebDriverException)
+    except WebDriverException as errorMessage:
+        print(errorMessage)
 
 main_test()
