@@ -13,14 +13,9 @@ pipeline {
          steps {
             
              sh "docker-compose up -d" /*don't work its said docker can't start */ 
-         }
-      }
-      stage('build-e2e.py')
-      {
-         steps
-         {
             sh "python2.7 e2e.py" /*don't work it's said selenium don't exist*/
          }
       }
+     
    }
 }
