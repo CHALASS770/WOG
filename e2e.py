@@ -10,7 +10,7 @@ def test_score_webservice():
 
     Url = "http://127.0.0.1:8777"
     print(3)
-    driver = webdriver.firefox(executable_path='../geckodriver')
+    driver = webdriver.firefox(executable_path='../WOG/geckodriver')
     print(driver) 
     print(2)
     driver.get(Url)
