@@ -26,9 +26,10 @@ def test_score_webservice():
         print("False")
         return False
 def main_test() :
-
+    try:
         test = test_score_webservice()
         print(0)
-
+    except WebDriverException:
+        print(WebDriverException)
 
 main_test()
