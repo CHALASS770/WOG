@@ -11,7 +11,9 @@ def test_score_webservice():
 
     Url = "http://127.0.0.1:8777"
     print(3)
-    driver = webdriver.Chrome(executable_path='/home/chal/PycharmProjects/WoG/chromedriver')
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(executable_path='/home/chal/PycharmProjects/WoG/chromedriver', chrome_options=options)
     print(2)
 
     driver.get(Url)
