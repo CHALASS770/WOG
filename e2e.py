@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.chrome.options import Options
 from time import sleep
 
 print("test")
@@ -11,8 +12,8 @@ def test_score_webservice():
 
     Url = "http://127.0.0.1:8777"
     print(3)
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    options = Options()
+    options.add_argument('--headless')
     driver = webdriver.Chrome(executable_path='/home/chal/PycharmProjects/WoG/chromedriver', chrome_options=options)
     print(2)
 
